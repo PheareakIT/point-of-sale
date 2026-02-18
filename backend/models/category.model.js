@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const categorySchema = new mongoose.Schema({
     name: {
-        Type: String,
+        type: String,
         required: [true, 'category name is required !!!'],
         unique: true
     },
 
     note:{
-        Type: String,
+        type: String,
         required: false
     }
 

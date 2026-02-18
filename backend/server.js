@@ -7,6 +7,8 @@ const categoryRouter = require('./routes/category.route');
 dotenv.config();
 const app = express();
 
+//middleware
+app.use(express.json());
 app.use('/api/category', categoryRouter);
 
 app.get('/',(req, res) => {
